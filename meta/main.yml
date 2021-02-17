@@ -2,7 +2,7 @@
 galaxy_info:
   role_name: snapd
   author: ProfessorManhattan
-  description: Installs everything you need to use snap on Linux distros
+  description: Installs everything needed to use snap on Linux distros
   company: Megabyte Labs
   license: license (MIT)
 
