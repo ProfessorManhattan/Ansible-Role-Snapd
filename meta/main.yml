@@ -9,17 +9,16 @@ galaxy_info:
   min_ansible_version: 2.10
 
   platforms:
-    - name: EL
+    - name: CentOS
       versions:
-        - 6
         - 7
         - 8
     - name: Fedora
       versions:
-        - all
+        - 33
     - name: Ubuntu
       versions:
-        - all
+        - focal
     - name: Debian
       versions:
         - all
