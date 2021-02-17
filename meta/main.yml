@@ -2,9 +2,8 @@
 galaxy_info:
   role_name: snapd
   author: ProfessorManhattan
-  description: Installs snap on Linux OSes
+  description: Installs everything you need to use snap on Linux distros
   company: Megabyte Labs
-  # https://gitlab.com/ProfessorManhattan/Playbooks/-/issues
   license: license (MIT)
 
   min_ansible_version: 2.10
