@@ -24,14 +24,15 @@ matrix:
         - choco install python --version 3.8.0
         - python --version
         - python -m pip install --upgrade pip
-        - python -m pip install ansible
       install:
         - pip3 install ansible
       env: PATH=/c/Python38:/c/Python38/Scripts:$PATH
 
 script:
-  - printf '[defaults]\nroles_path=./' >ansible.cfg
-  - ansible-playbook --version
+  - printf '[defaults]\nroles_path=../' > ansible.cfg
+  - ROLE_FOLDER=$(basename "$PWD")
+  - sed -i "s/ROLE_NAME/${ROLE_FOLDER}/g" tests/test.yml
+  - ansible --version
   - ansible-playbook tests/test.yml -i tests/inventory
 
 notifications:
