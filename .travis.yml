@@ -1,11 +1,14 @@
 ---
-language: python
-dist: focal
-python:
-  - 3.8
-
 matrix:
   include:
+    - name: Ubuntu 20.04
+      os: linux
+      dist: focal
+      python:
+        - 3.8
+      before_install:
+        - python --version
+        - pip3 install ansible
     - name: Mac OS X 10.15.7
       os: osx
       osx_image: xcode12.2
@@ -19,16 +22,13 @@ matrix:
       before_install:
         - choco install python --version 3.8.0
         - python --version
+        - python -m pip install --upgrade pip
         - pip3 install ansible
       env: PATH=/c/Python38:/c/Python38/Scripts:$PATH
 
-before_install:
-  - python3 --version
-  - pip3 install ansible
-
 script:
   - ansible --version
-  - printf '[defaults]\nroles_path=../' > ansible.cfg
+  - printf '[defaults]\nroles_path=../../' > ansible.cfg
   - ansible-playbook tests/test.yml -i tests/inventory
 
 notifications:
