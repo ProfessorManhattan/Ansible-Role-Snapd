@@ -20,3 +20,10 @@
   community.general.snap:
     name: core
     state: present
+  ignore_errors: "{{ docker_molecule_test | default(false) }}"
+
+- name: Retry snap core installation on Docker host (Docker fails the first time but succeeds the second time)
+  community.general.snap:
+    name: core
+    state: present
+  when: docker_molecule_test | default(false)

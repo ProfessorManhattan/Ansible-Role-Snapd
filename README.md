@@ -1,11 +1,11 @@
-<!-- ⚠️ This README has been generated from the file(s) "./modules/docs/blueprint-readme.md" ⚠️--><h1 align="center">Ansible Role: Android Studio</h1>
+<!-- ⚠️ This README has been generated from the file(s) "./modules/docs/blueprint-readme.md" ⚠️--><h1 align="center">Ansible Role: Snap</h1>
 <div align="center">
   <h4>
     <a href="https://gitlab.com/ProfessorManhattan/Playbooks">Main Playbook</a>
     <span> | </span>
-    <a href="https://galaxy.ansible.com/professormanhattan/androidstudio">Galaxy</a>
+    <a href="https://galaxy.ansible.com/professormanhattan/snapd">Galaxy</a>
     <span> | </span>
-    <a href="https://gitlab.com/megabyte-space/ansible-roles/androidstudio/-/blob/master/CONTRIBUTING.md">Contributing</a>
+    <a href="https://gitlab.com/megabyte-space/ansible-roles/snapd/-/blob/master/CONTRIBUTING.md">Contributing</a>
     <span> | </span>
     <a href="https://app.slack.com/client/T01ABCG4NK1/C01NN74H0LW/details/">Chat</a>
     <span> | </span>
@@ -14,10 +14,10 @@
 </div>
 <p style="text-align:center;">
   <img alt="Version" src="https://img.shields.io/badge/version-0.0.1-blue.svg?cacheSeconds=2592000" />
-  <a href="https://megabyte.space/docs/androidstudio" target="_blank">
+  <a href="https://megabyte.space/docs/snapd" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
-  <a href="repository.gitlab_ansible_roles_group/androidstudio/-/raw/master/LICENSE" target="_blank">
+  <a href="repository.gitlab_ansible_roles_group/snapd/-/raw/master/LICENSE" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
   <a href="https://twitter.com/PrfssrManhattan" target="_blank">
@@ -25,7 +25,7 @@
   </a>
 </p>
 <p align="center">
-  <b>An Ansible role that installs Android Studio on nearly any OS</b></br>
+  <b>Ansible role that installs everything needed to use Snap on Linux</b></br>
   <sub><sub>
 </p>
 
@@ -44,7 +44,7 @@
 
 ## ➤ Overview
 
-This repository contains an Ansible role that will install Android Studio on nearly any OS. Android Studio is the official integrated development environment for Google's Android operating system, built on JetBrains' IntelliJ IDEA software and designed specifically for Android development.
+This repository contains an Ansible role that will install [Snap](https://snapcraft.io/) on Linux machines. Snap is a software packaging and deployment system developed by [Canonical](https://canonical.com/) for operating systems that use the Linux kernel.
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)](#supported-operating-systems)
 
@@ -90,7 +90,7 @@ With the dependencies installed, all you have to do is add the role to your main
 ```lang-yml
 - hosts: all
   roles:
-    - androidstudio
+    - snapd
 ```
 
 
@@ -122,4 +122,4 @@ Sincerely,
 
 ## ➤ License
 
-Copyright © 2021 [Megabyte LLC](https://megabyte.space). This project is [MIT](repository.gitlab_ansible_roles_group/androidstudio/-/raw/master/LICENSE) licensed.
+Copyright © 2021 [Megabyte LLC](https://megabyte.space). This project is [MIT](repository.gitlab_ansible_roles_group/snapd/-/raw/master/LICENSE) licensed.

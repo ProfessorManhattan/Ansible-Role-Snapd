@@ -139,7 +139,7 @@ source venv/bin/activate
 
 ## ➤ Pull Requests
 
-All pull requests should be associated with issues. You can find the [issues board on GitLab](https://gitlab.com/ProfessorManhattan/Playbooks). The pull requests should be made to [the GitLab repository](https://gitlab.com/megabyte-space/ansible-roles/androidstudio) instead of the [GitHub repository](https://github.com/ProfessorManhattan/ansible-androidstudio). This is because we use GitLab as our primary repository and mirror the changes to GitHub for the community.
+All pull requests should be associated with issues. You can find the [issues board on GitLab](https://gitlab.com/ProfessorManhattan/Playbooks). The pull requests should be made to [the GitLab repository](https://gitlab.com/megabyte-space/ansible-roles/snapd) instead of the [GitHub repository](https://github.com/ProfessorManhattan/ansible-snapd). This is because we use GitLab as our primary repository and mirror the changes to GitHub for the community.
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)](#code-style)
 
@@ -235,7 +235,7 @@ For example, say the application being installed is Android Studio. The dependen
     state: present
 ```
 
-If there are dependencies that are specific to a certain OS, then the dependency variable should be titled `androidstudio_dependencies_os_family`. For Android Studio, a Fedora-specific dependency list should be named `androidstudio_dependencies_fedora`. In practice, this would look like:
+If there are dependencies that are specific to a certain OS, then the dependency variable should be titled `snapd_dependencies_os_family`. For Android Studio, a Fedora-specific dependency list should be named `androidstudio_dependencies_fedora`. In practice, this would look like:
 
 ```yaml
 - name: "Ensure app_name's dependencies are installed (Fedora)"

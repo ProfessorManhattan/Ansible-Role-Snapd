@@ -1,8 +1,9 @@
 ---
 galaxy_info:
   role_name: snapd
+  name: Snap
   author: ProfessorManhattan
-  description: Installs everything needed to use snap on Linux distros
+  description: Ansible role that installs everything needed to use Snap on Linux
   company: Megabyte Labs
   license: license (MIT)
 
