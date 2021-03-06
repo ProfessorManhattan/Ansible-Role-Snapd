@@ -16,3 +16,8 @@
     src: /var/lib/snapd/snap
     dest: /snap
     state: link
+
+- name: Reload udev
+  ansible.builtin.service:
+    name: udev
+    state: restarted

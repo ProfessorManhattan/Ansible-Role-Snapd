@@ -39,6 +39,10 @@
         src: /var/lib/snapd/snap
         dest: /snap
         state: link
+    - name: Reload udev
+      ansible.builtin.service:
+        name: udev
+        state: restarted
   when: not snap_stat.stat.exists
   always:
     - name: Ensure to remove the temporary directory created for snapd source files
