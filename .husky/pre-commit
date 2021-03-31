@@ -30,16 +30,8 @@ echo "Checking for private keys.."
 detect-private-key
 echo "Ensuring requirements.txt is formatted properly"
 requirements-txt-fixer requirements.txt
-echo "Linting YML files with yamllint"
-yamllint .
-echo "Linting Ansible files with ansible-lint"
-ansible-lint
-echo "Linting Python files with flake8"
-flake8
-echo "Linting Python files with black"
-black .
 echo "Running 'npm run lint'"
 npm run lint
 echo "Checking for spelling errors"
 files=$(git diff --cached --name-only)
-npx cspell --config ./.modules/shared/.cspell.json --no-summary $files || echo "If the words are spelled correctly, add them to a file called .dictionary.txt in the root of this repository."
+npx cspell --no-summary --config ./.modules/shared/.cspell.json $files || echo "Review the list of possible misspelled words above and correct anything that needs changing."

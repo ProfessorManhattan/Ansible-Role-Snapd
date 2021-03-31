@@ -1,12 +1,12 @@
-<!-- ⚠️ This README has been generated from the file(s) "./.modules/docs/blueprint-readme.md" ⚠️--><h1 align="center" style="text-align:center;">Ansible Role: Snap</h1>
+<!-- ⚠️ This README has been generated from the file(s) "./.modules/docs/blueprint-readme.md" ⚠️--><h1 align="center" style="text-align:center;">Ansible Role: Android Studio</h1>
 
 <div align="center">
   <h4>
     <a href="https://gitlab.com/ProfessorManhattan/Playbooks">Main Playbook</a>
     <span> | </span>
-    <a href="https://galaxy.ansible.com/professormanhattan/snapd">Galaxy</a>
+    <a href="https://galaxy.ansible.com/professormanhattan/androidstudio">Galaxy</a>
     <span> | </span>
-    <a href="https://gitlab.com/megabyte-space/ansible-roles/snapd/-/blob/master/CONTRIBUTING.md">Contributing</a>
+    <a href="https://gitlab.com/megabyte-space/ansible-roles/androidstudio/-/blob/master/CONTRIBUTING.md">Contributing</a>
     <span> | </span>
     <a href="https://app.slack.com/client/T01ABCG4NK1/C01NN74H0LW/details/">Chat</a>
     <span> | </span>
@@ -14,13 +14,13 @@
   </h4>
 </div>
 <p style="text-align:center;">
-  <a href="https://gitlab.com/megabyte-space/ansible-roles/snapd">
+  <a href="https://gitlab.com/megabyte-space/ansible-roles/androidstudio">
     <img alt="Version" src="https://img.shields.io/badge/version-0.0.1-blue.svg?cacheSeconds=2592000" />
   </a>
-  <a href="https://megabyte.space/docs/snapd" target="_blank">
+  <a href="https://megabyte.space/docs/androidstudio" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
-  <a href="repository.gitlab_ansible_roles_group/snapd/-/raw/master/LICENSE" target="_blank">
+  <a href="repository.gitlab_ansible_roles_group/androidstudio/-/raw/master/LICENSE" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
   <a href="https://twitter.com/PrfssrManhattan" target="_blank">
@@ -29,7 +29,7 @@
 </p>
 
 <p align="center" style="text-align:center;">
-  <b>role_description</b></br>
+  <b>An Ansible role that installs Android Studio on nearly any OS</b></br>
 </p>
 
 
@@ -49,7 +49,7 @@
 
 ## ➤ Overview
 
-role_description_full_overview
+This repository contains an Ansible role that will install Android Studio on nearly any OS. Android Studio is the official integrated development environment for Google's Android operating system, built on JetBrains' IntelliJ IDEA software and designed specifically for Android development.
 
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)](#supported-operating-systems)
@@ -98,7 +98,7 @@ With the dependencies installed, all you have to do is add the role to your main
 ```lang-yml
 - hosts: all
   roles:
-    - professormanhattan.snapd
+    - professormanhattan.androidstudio
 ```
 
 
@@ -106,7 +106,7 @@ With the dependencies installed, all you have to do is add the role to your main
 
 ## ➤ Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://gitlab.com/megabyte-space/ansible-roles/snapd/-/issues). If you would like to contribute, please take a look at the [contributing guide](https://gitlab.com/megabyte-space/ansible-roles/snapd/-/raw/master/CONTRIBUTING.md).
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://gitlab.com/megabyte-space/ansible-roles/androidstudio/-/issues). If you would like to contribute, please take a look at the [contributing guide](https://gitlab.com/megabyte-space/ansible-roles/androidstudio/-/raw/master/CONTRIBUTING.md).
 
 <details>
 <summary>Sponsorship</summary>
@@ -130,5 +130,5 @@ I create open source projects out of love. Although I have a job, shelter, and a
 
 ## ➤ License
 
-Copyright © 2021 [Megabyte LLC](https://megabyte.space). This project is [MIT](repository.gitlab_ansible_roles_group/snapd/-/raw/master/LICENSE) licensed.
+Copyright © 2021 [Megabyte LLC](https://megabyte.space). This project is [MIT](repository.gitlab_ansible_roles_group/androidstudio/-/raw/master/LICENSE) licensed.
 
